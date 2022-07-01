@@ -19,13 +19,14 @@ public class InMemoryExample {
         Pipeline p = Pipeline.create(myOptions);
 
         PCollection<PurchaseOrderEntity> pPurchaseOrderList1 = p.apply(Create.of(getOPurchaseOrder()));
+
         PCollection<PurchaseOrderEntity> pPurchaseOrderList2 = p.apply(Create.of(getOPurchaseOrder2()));
 
         PCollectionList<PurchaseOrderEntity> list = PCollectionList.of(pPurchaseOrderList1).and(pPurchaseOrderList2);
 
        PCollection<PurchaseOrderEntity> merged =  list.apply(Flatten.pCollections());
 
-     //   PCollectionList<PurchaseOrderEntity> partition = merged.apply(Partition.of(0, new MyPurchaseOrderPartition()));
+        PCollectionList<PurchaseOrderEntity> partition = merged.apply(Partition.of(0, new MyPurchaseOrderPartition()));
 
        PCollection<PurchaseOrderEntity> pStrListFilterQty =  merged.apply(ParDo.of(new PurchaseOrderFilter()));
 

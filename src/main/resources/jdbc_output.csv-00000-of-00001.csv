@@ -1,5 +1,5 @@
-CIP,CIP Carriage and Insurance Paid to,t
-FOB,FOB Free On Board ,t
-FAC,FCA Free Carrier,t
-FAS,FAS Free Alongside Ship,t
-PRU,Prueba,t
+123, {"id":"1","businessUnitCode":"SOD","businessUnitCountryCode":"CL","purchaseOrderCodeLocal":"123","etd":1656561600000,"eta":1656561600000,"quantityRemaining":null,"canBeShipped":true}
+125, {"id":"5","businessUnitCode":"SOD","businessUnitCountryCode":"CO","purchaseOrderCodeLocal":"125","etd":1656561600000,"eta":1656561600000,"quantityRemaining":null,"canBeShipped":true}
+124, {"id":"4","businessUnitCode":"SOD","businessUnitCountryCode":"PE","purchaseOrderCodeLocal":"124","etd":1656561600000,"eta":1656561600000,"quantityRemaining":null,"canBeShipped":true}
+124, {"id":"3","businessUnitCode":"SOD","businessUnitCountryCode":"PE","purchaseOrderCodeLocal":"124","etd":1656561600000,"eta":1656561600000,"quantityRemaining":null,"canBeShipped":true}
+123, {"id":"2","businessUnitCode":"SOD","businessUnitCountryCode":"CL","purchaseOrderCodeLocal":"123","etd":1656561600000,"eta":1656561600000,"quantityRemaining":null,"canBeShipped":true}
